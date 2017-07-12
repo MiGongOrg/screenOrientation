@@ -56,7 +56,7 @@ var screenOrientation = function(option){
 				_width=(window.innerWidth > 0) ? window.innerWidth : screen.width;
 				_height=(window.innerHeight > 0) ? window.innerHeight : screen.height;
 				_this.modifyDetec(_width,_height);
-			},50);
+			}, 200);
 			
 		};
 	}
