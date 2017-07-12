@@ -49,11 +49,12 @@ var screenOrientation = function(option){
 		}
 	}
 	function detectOtt(){
-		_width=(window.innerWidth > 0) ? window.innerWidth : screen.width;
-		_height=(window.innerHeight > 0) ? window.innerHeight : screen.height;
+		
 		if(window.orientation==180||window.orientation==0||window.orientation==90||window.orientation==-90){
 			clearTimeout(timer);
 			timer = setTimeout(function(){
+				_width=(window.innerWidth > 0) ? window.innerWidth : screen.width;
+				_height=(window.innerHeight > 0) ? window.innerHeight : screen.height;
 				_this.modifyDetec(_width,_height);
 			},50);
 			
