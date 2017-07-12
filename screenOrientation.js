@@ -62,5 +62,5 @@ var screenOrientation = function(option){
 	}
 	if(_this.option.init){_this.option.init();}
 	detectOtt();
-	window.addEventListener("resize",detectOtt,false);
+	window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", detectOtt, false);
 };
